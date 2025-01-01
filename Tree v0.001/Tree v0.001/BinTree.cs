@@ -12,7 +12,7 @@ namespace Tree_v0._001
         public NodeT Root { get; set; }
         public void Insert(int value)
         {
-            if(Root == null)
+            if (Root == null)
             {
                 Root = new NodeT(value);
             }
@@ -21,12 +21,12 @@ namespace Tree_v0._001
                 InsertR(Root, value);
             }
         }
-        
-        public void InsertR(NodeT node,int value)
+
+        public void InsertR(NodeT node, int value)
         {
             if (value < node.Value)
             {
-                if (node.Left==null)
+                if (node.Left == null)
                 {
                     node.Left = new NodeT(value);
                 }
@@ -99,5 +99,57 @@ namespace Tree_v0._001
             }
             return node;
         }
-    }
+
+        public List<int> InOrder()
+        {
+            List<int> list = new List<int>();
+            InOrderInit(Root, list);
+            return list;
+        }
+
+
+        public void InOrderInit(NodeT node, List<int> list)
+        {
+
+            if (node != null)
+            {
+                InOrderInit(node.Left, list);
+                list.Add(node.Value);
+                InOrderInit(node.Right, list);
+            }
+        }
+
+        public void PreOrderInit(NodeT node, List<int> list)
+        {
+            if (node != null)
+            {
+                list.Add(node.Value);
+                PreOrderInit(node.Left, list);
+                PreOrderInit(node.Right, list);
+            }
+        }
+
+        public void PostOrderInit(NodeT node, List<int> list)
+        {
+            if (node != null)
+            {
+                PostOrderInit(node.Left, list);
+                PostOrderInit(node.Right, list);
+                list.Add(node.Value);
+            }
+        }
+        public List<int> PreOrder()
+        {
+            List<int> list = new List<int>();
+            PreOrderInit(Root, list);
+            return list;
+        }
+
+        public List<int> PostOrder()
+        {
+            List<int> list = new List<int>();
+            PostOrderInit(Root, list);
+            return list;
+        }
+    } 
 }

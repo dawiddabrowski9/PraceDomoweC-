@@ -78,5 +78,26 @@ namespace Tree_v0._001
             UpdateTreeView();
             numericUpDown.Value = 0;
         }
+
+        private void InOrder_Click(object sender, EventArgs e)
+        {
+            List<int> list =  binTree.InOrder();
+            string result = string.Join(", ", list);
+            label1.Text = result;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            List<int> list = binTree.PostOrder();
+            string result = string.Join(", ", list);
+            label1.Text = result;
+        }
+
+        private void PreOrder_Click(object sender, EventArgs e)
+        {
+            List<int> list = binTree.PreOrder();
+            string result = string.Join(", ", list);
+            label1.Text = result;
+        }
     }
 }
