@@ -1,0 +1,10 @@
+C:\Users\Me\source\repos\Tree v0.001\Tree v0.001\bin\Debug\Tree v0.001.exe.config
+C:\Users\Me\source\repos\Tree v0.001\Tree v0.001\bin\Debug\Tree v0.001.exe
+C:\Users\Me\source\repos\Tree v0.001\Tree v0.001\bin\Debug\Tree v0.001.pdb
+C:\Users\Me\source\repos\Tree v0.001\Tree v0.001\obj\Debug\Tree v0.001.csproj.AssemblyReference.cache
+C:\Users\Me\source\repos\Tree v0.001\Tree v0.001\obj\Debug\Tree_v0._001.Properties.Resources.resources
+C:\Users\Me\source\repos\Tree v0.001\Tree v0.001\obj\Debug\Tree v0.001.csproj.GenerateResource.cache
+C:\Users\Me\source\repos\Tree v0.001\Tree v0.001\obj\Debug\Tree v0.001.csproj.CoreCompileInputs.cache
+C:\Users\Me\source\repos\Tree v0.001\Tree v0.001\obj\Debug\Tree v0.001.exe
+C:\Users\Me\source\repos\Tree v0.001\Tree v0.001\obj\Debug\Tree v0.001.pdb
+C:\Users\Me\source\repos\Tree v0.001\Tree v0.001\obj\Debug\Tree_v0._001.Form1.resources
